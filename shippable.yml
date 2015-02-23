@@ -23,6 +23,7 @@ before_script:
 before_install:
   - node --version
   - npm install -g grunt-cli
+  
 
 
 archive: true
@@ -30,6 +31,7 @@ archive: true
 script:
   - grunt
   - echo $BUILD_URL
+  - echo $BUILD_NUMBER
 
 # Tell istanbul to generate a coverage report
 after_script:
