@@ -25,6 +25,7 @@ before_install:
 
 archive: true
 # Running the tests with grunt
+
 script:
   - grunt
   - echo $BUILD_URL
