@@ -3,7 +3,6 @@
 # Language setting
 language: node_js
 
-
 #build_image: shippable/minv2:beta
 
 # Version number
@@ -23,8 +22,6 @@ before_script:
 before_install:
   - node --version
   - npm install -g grunt-cli
-  
-
 
 archive: true
 # Running the tests with grunt
