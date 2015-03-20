@@ -12,12 +12,15 @@ node_js:
 
 # The path for Xunit to output test reports
 env:
+ global:
+  - secure: mQ2jaMG0gvkIg9L7IIEuZFT27vd21Y5uwQ/qX2pESIKpV07dJk/TEXavHYlHEeuHJBzneCg1VIisopIu9OqRl5VfKjNIiNzUj6IVScBCMM8bZB9TjO4a1vbdO4oOgQYOD0o/NIfEUhK1bm9WiuejCo9Ircd84+NT6Eu3stLmjOKuvVQrLGNDUM57FeL6WWrf8i24FPzKLPI8EgE6eDqBxAcH2aoGH3uZLc0GmNyrwvKmtpltfdYQaAs49SXxJ5ohxmfh2sBkqeneazhco3VXNKZKJglBWVL+g3MLNZaXFdVkzsir6gQwtAwdtftKcCaXi8sr7Jeqf4EzLVgYXdGWMQ==
   - XUNIT_FILE=shippable/testresults/result.xml
 
 # Create directories for test and coverage reports
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - echo $key1 #prod
   
 before_install:
   - node --version
