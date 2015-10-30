@@ -1,4 +1,4 @@
-Node.js Sample
+Node.js project Sample
 =================
 A simple Node.js application with tests.
 
