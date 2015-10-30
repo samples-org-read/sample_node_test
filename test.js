@@ -8,7 +8,7 @@ describe("Index", function () {
     superagent.get("http://localhost:3000/")
       .end(function (e, res) {
         (e === null).should.equal(true);
-        res.text.should.equal("Hey budd11y!");
+        res.text.should.equal("Heyy budd11y!");
         done();
       });
   });
